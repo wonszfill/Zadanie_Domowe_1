@@ -1,0 +1,86 @@
+html{
+    padding:0;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    align-items: center;
+    padding:0 10%;
+    min-height: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box{
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.box > h1{
+    text-transform: uppercase;
+    animation: rainbow 10s infinite;
+}
+
+.box > p{
+    margin: 25px auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: justify;
+    transition: color linear 0.4s;
+}
+
+.box:hover p{
+    color: rgb(216, 216, 0);
+}
+
+.box:hover .red:hover{
+    color: red;
+}
+
+.box:hover .blue:hover{
+    color:blue;
+}
+
+@keyframes rainbow{
+    0%{
+        color:yellow;
+    }
+    10%{
+        color:yellowgreen;
+    }
+    20%{
+        color:green;
+    }
+    30%{
+        color:blue;
+    }
+    40%{
+        color:blueviolet;
+    }
+    50%{
+        color:violet;
+    }
+    60%{
+        color:red;
+    }
+    70%{
+        color:orangered;
+    }
+    80%{
+        color:orange;
+    }
+    90%{
+        color:gold;
+    }
+    100%{
+        color:yellow;
+    }
+}
